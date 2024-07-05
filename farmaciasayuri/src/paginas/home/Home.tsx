@@ -1,7 +1,9 @@
+import ListaCategoria from "../../components/categoria/listaCategorias/ListaCategorias";
+
 function Home() {
     return (
         <>
-            <div className="flex justify-center m-5">
+            <div className="flex justify-center my-5">
                 <img
                     src="https://img.farmaciasapp.com.br/marketplace/fapp-mktp/banners/e4d97fff-9bfe-4a44-83fc-b86449b8ee68-png?ims=1320x360"
                     alt="image 1"
@@ -11,11 +13,13 @@ function Home() {
 
             <div className="container flex flex-col w-11/12 justify-center mx-auto">
                 <h2 className="text-2xl uppercase font-bold text-rose-500">Categorias</h2>
-                <p> aqui vai o card das categorias </p>
+                <ListaCategoria/>
 
                 <h2 className="pt-4 text-2xl uppercase font-bold text-rose-500">Produtos</h2>
-                <p> aqui vai o card dos produtos </p>
+                
             </div>
+
+        
         </>
     )
 }
