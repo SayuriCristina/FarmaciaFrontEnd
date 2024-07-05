@@ -3,20 +3,8 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: 'https://farmaciaapi-utl2.onrender.com/swagger-ui/index.html#/'
+  baseURL: 'https://farmaciaapi-utl2.onrender.com'
 })
-
-// Função para cadastrar um usuário 
-export const cadastrarTema = async (url: string, dados: Object, setDados: Function) => {
-  const resposta = await api.post(url, dados)
-  setDados(resposta.data)
-}
-
-// Função para realizar o login
-export const login = async (url: string, dados: Object, setDados: Function) => {
-  const resposta = await api.post(url, dados)
-  setDados(resposta.data)
-}
 
 // Função para buscar dados (GET)
 export const buscar = async (url: string, setDados: Function) => {
